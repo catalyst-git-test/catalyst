@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "1926000004334025",
+      "name": "CatalystAuto",
+      "domain": {
+        "id": "1010342197",
+        "name": "catalystauto-64716739.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "64716739",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
