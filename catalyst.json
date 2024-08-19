@@ -1,0 +1,31 @@
+{
+  "functions": {
+    "targets": [
+      "CircuitFunction",
+      "nodee",
+      "FunctionTest",
+      "basicNode",
+      "CronTest",
+      "CircuitsCases",
+      "catalystAutomationProject",
+      "AuthenticationCases",
+      "FileStore",
+      "CacheCases",
+      "CronCases",
+      "ZCQLCases",
+      "FunctionCases",
+      "SearchCases",
+      "MailCases",
+      "ZiaCases",
+      "SendMail",
+      "Twe"
+    ],
+    "ignore": [
+      ".output"
+    ],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

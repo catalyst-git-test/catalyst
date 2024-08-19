@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>catalystAutomationProject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="tabledata.js"></script>
+    <script src="https://static.localzohocdn.com/catalyst/sdk/js/3.3.0/catalystWebSDK.js"></script>
+    <script src="/__catalyst/sdk/init.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+  function showProfile(){
+    catalyst.auth.isUserAuthenticated().then(result => {
+          var first_name = "First Name: " + result.content.first_name;
+          document.getElementById("name").innerHTML = first_name;
+        });
+  }
+  function logout() {
+      var redirectURL = "https://" + document.domain + "/app/index.html";
+      console.log(redirectURL);
+      var auth = catalyst.auth;
+      auth.signOut(redirectURL);
+  }
+  function createURL(){
+    var url="https://"+document.domain+"/app/"+arguments[0]+".html";
+    return url;
+  }
+  </script>
+</head>
+
+<body style="background-color:#F5FFFA;" onload="showProfile()">
+  <div class="empty">
+    <p id="name"></p>
+    <p><button onclick="logout()">Logout</button></p>
+  </div>
+  <div class="container">
+  <div class="card-deck">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <img src="catalyst.png" alt="All Cases" style='height: 65%; width: 65%;'/>
+        <a href="javascript:window.location=createURL('singleHTML')" class="button button1">All Cases</a>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+      <img src="Authentication.png" alt="Authentication" style='height: 65%; width: 65%;'/>
+      <a href="javascript:window.location=createURL('authentication')" class="button button1">Authentication Cases</a>
+      </div>
+    </div>
+    <div class="card bg-success">
+      <div class="card-body text-center">
+      <img src="Filestore.png" alt="File Store" style='height: 65%; width: 65%;'/>
+      <a href="javascript:window.location=createURL('filestore')" class="button button1">FileStore Cases</a>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="card-deck">
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <img src="cache.png" alt="Cache" style='height: 65%; width: 65%;'/>
+        <a href="javascript:window.location=createURL('cache')" class="button button1">Cache Cases</a>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+      <img src="cron.png" alt="Cron" style='height: 65%; width: 65%;'/>
+      <a href="javascript:window.location=createURL('cron')" class="button button1">Cron Cases</a>
+      </div>
+    </div>
+    <div class="card bg-info">
+      <div class="card-body text-center">
+      <img src="zcql.png" alt="ZCQL" style='height: 65%; width: 65%;'/>
+      <a href="javascript:window.location=createURL('zcql')" class="button button1">ZCQL Cases</a>
+      </div>
+    </div>
+  </div>
+    <br><br><br>
+    <div class="card-deck">
+      <div class="card bg-secondary text-white">
+        <div class="card-body text-center">
+          <img src="functions.png" alt="Functions" style='height: 65%; width: 65%;'/>
+          <a href="javascript:window.location=createURL('functions')" class="button button1">Functions Cases</a>
+        </div>
+      </div>
+      <div class="card bg-primary">
+        <div class="card-body text-center">
+        <img src="search.png" alt="Search" style='height: 65%; width: 65%;'/>
+        <a href="javascript:window.location=createURL('search')" class="button button1">Search Cases</a>
+        </div>
+      </div>
+      <div class="card bg-warning">
+        <div class="card-body text-center">
+        <img src="mail.png" alt="Mail" style='height: 65%; width: 65%;'/>
+        <a href="javascript:window.location=createURL('mail')" class="button button1">Mail Cases</a>
+        </div>
+      </div>
+  </div>
+  <br><br><br>
+  <div class="card-deck" style="width:640px;height:250px">
+    <div class="card bg-success">
+      <div class="card-body text-center">
+        <img src="zia.png" alt="Zia" style='height: 65%; width: 65%;'/>
+        <a href="javascript:window.location=createURL('zia')" class="button button1">Zia Cases</a>
+      </div>
+    </div>
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <img src="datastore.png" alt="Data Store" style='height: 65%; width: 65%;'/>
+        <a href="javascript:window.location=createURL('datastore')" class="button button1">DataStore Cases</a>
+      </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>

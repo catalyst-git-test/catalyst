@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Function Cases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="Functions.js"></script>
+    <script src="https://static.stratuscdn.com/catalyst/sdk/js/2.0.0/catalystWebSDK.js"></script>
+    <script src="/__catalyst/sdk/init.js"></script>
+</head>
+<body onload="hideLoader()">
+  <center>
+    <div class="username" id="username">
+      <p id="fname"</p>
+      </div>
+  <div class="rundatastore" id="rundatastore">
+    <button id="runcase" class="button button1" onclick="runCases()">Run Cases</button>
+    </div>
+    <div class="loader" id="loader"></div>
+  <div class="cases_table" id="cases_table">
+  <table style="width:80%" class="data_table" id="data_table" border="1">
+    <tr>
+      <th>S.No</th>
+      <th>Case description</th>
+      <th>Case result</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>Execute a function and verify whether it has executed properly</td>
+    <td id="row1"></td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>Get the details of a function and verify whether its details are correct</td>
+    <td id="row2"></td>
+    </tr>
+  </table>
+  </div>
+  <div class="count" id="count">
+  </div>
+  </center>
+  </body>
+  </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="tabledata.js"></script>
+    <script src="main.js"></script>
+    <script src="https://static.stratuscdn.com/catalyst/sdk/js/3.0.0/catalystWebSDK.js"></script>
+    <script src="/__catalyst/sdk/init.js"></script>
+</head>
+<body onload="hideLoader()">
+  <font size="4">
+  <center>
+    <div class="username" id="username">
+      <p id="fname"</p>
+      </div>
+  <div class="rundatastore" id="rundatastore">
+    <button id="runcase" class="button button1" onclick="runCases()">Run Cases</button>
+    </div>
+    <div class="loader" id="loader"></div>
+  <div class="cases_table" id="cases_table">
+  <table style="width:80%" class="data_table" id="data_table" border="1" >
+  <tr>
+    <th>S.No</th>
+    <th>Case description</th>
+    <th>Case result</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Insert values for all columns and then fetch it from datastore to compare the values<br><br>Steps :<br>In an already created table with all types of columns, insert a new row using insertRow method.<br>Then, using ZCQL query, fetch the inserted row and verify each column's value.</td>
+    <td id="row1"></td>
+    </tr>
+  <tr>
+    <td>2</td>
+    <td>Try to insert a duplicate value and check whether it is prevented<br><br>Steps : <br>For a column marked as unique , insert a duplicate value which is already present in the table and check for the exception thrown.</td>
+    <td id="row2"></td>
+    </tr>
+  <tr>
+      <td>3</td>
+      <td>Try to insert a row without providing value for mandatory column and check whether it is prevented</td>
+      <td id="row3"></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Try to insert a row with invalid value and check whether it is prevented<br><br>Steps : <br>For a column marked as integer, provide a text value and call the insertRow method and verify the exception thrown for this action.</td>
+    <td id="row4"></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Update the row which was inserted initially and check whether it is working fine<br><br>Steps : <br>Fetch an already inserted row and set new values for the columns and update the row using updateRow method.<br>Verify the details of the updatd row.</td>
+    <td id="row5"></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Delete the row which was inserted initially and check whether it is working fine<br><br>Steps : <br>Using deleteRow method, delete the row which was inserted initially and check whether it is deleted properly.</td>
+    <td id="row6"></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Insert multiple rows and verify the inserted values<br><br>Steps : <br>Using insertRows method, insert multiple rows into the table and verify whether they are inserted properly</td>
+    <td id="row7"></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Delete multiple rows and verify whether they are deleted properly<br><br>Steps : <br>Using deleteRows method, delete multiple rows from the table and verify whether they are deleted properly</td>
+    <td id="row8"></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>For system defined column ROWID, fetch its properties and verify whether they are correct.</td>
+    <td id="row9"></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>For foreign key column, fetch its properties and verify whether they are correct.</td>
+    <td id="row10"></td>
+  </tr>
+  </table>
+  </div>
+</center>
+</font>
+  </body>
+  </html>

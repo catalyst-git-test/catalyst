@@ -1,0 +1,6 @@
+{
+    "name": "catalystAutomationProject",
+    "version": "1.2.0",
+    "homepage": "index.html",
+      "login_redirect":"redirect.html"
+}

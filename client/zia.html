@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zia Cases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="zia.js"></script>
+    <script src="https://static.stratuscdn.com/catalyst/sdk/js/2.0.0/catalystWebSDK.js"></script>
+    <script src="/__catalyst/sdk/init.js"></script>
+</head>
+<body onload="hideLoader()">
+  <center>
+    <div class="username" id="username">
+      <p id="fname"</p>
+      </div>
+  <div class="rundatastore" id="rundatastore">
+    <button id="runcase" class="button button1" onclick="runCases()">Run Cases</button>
+    </div>
+    <div class="loader" id="loader"></div>
+  <div class="cases_table" id="cases_table">
+  <table style="width:80%" class="data_table" id="data_table" border="1">
+    <tr>
+      <th>S.No</th>
+      <th>Case description</th>
+      <th>Case result</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>Upload a pan card and check whether expected details are obtained</td>
+    <td id="row1"></td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>Upload a picture and check whether face analytics methods are working fine without throwing any null value or exception</td>
+    <td id="row2"></td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td>Upload a picture and check whether Image Moderation methods are working fine without throwing any null value or exception</td>
+    <td id="row3"></td>
+    </tr>
+    <tr>
+    <td>4</td>
+    <td>Upload a picture and check whether detectObjects methods are working fine without throwing any null value or exception</td>
+    <td id="row4"></td>
+    </tr>
+    <tr>
+    <td>5</td>
+    <td>Upload a barcode image and check whether content is detected without throwing any null value or exception</td>
+    <td id="row5"></td>
+    </tr>
+    <tr>
+    <td>6</td>
+    <td>Upload two images for image comparison and check confidence value is obtained without throwing any null value or exception</td>
+    <td id="row6"></td>
+    </tr>
+    <tr>
+    <td>7</td>
+    <td>Upload an image and check the working of OCR content whether any exception or null value is thrown</td>
+    <td id="row7"></td>
+    </tr>
+  </table>
+  </div>
+  </center>
+  </body>
+  </html>
