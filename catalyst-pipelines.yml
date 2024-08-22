@@ -1,0 +1,26 @@
+version: 1
+jobs:
+  hello:
+    steps:
+      - echo "Hello"
+  world:
+    steps:
+      - echo "World"
+  hello-world:
+    steps:
+      - echo "Hello World!"
+  git:
+    runner: run
+    steps:
+      - git add .
+      - git push -u origin main
+stages:
+  - name: build
+    jobs:
+      - - hello
+        - world
+      - hello-world
+      - git
+runners:
+  run:
+    config-id: 1
