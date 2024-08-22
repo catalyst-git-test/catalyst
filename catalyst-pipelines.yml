@@ -13,6 +13,7 @@ jobs:
     runner: run
     steps:
       - git add .
+      - git commit -m "test"
       - git push -u origin main
 stages:
   - name: build
