@@ -1,7 +1,7 @@
 var mailContent = "<center><b>List of failures in the report : </b><br><br> <table border=\"3\"><tr><th>Case id</th><th>Case description</th><th>Case result</th><th>Component</th></tr>";
 let functionsArray = [];
 async function executeCases() {
-  window.table = document.getElementById("data_table");
+    window.table = document.getElementById("data_table");
     await timeStart();
     await caseOrder();
     if (document.getElementById("email").value == "") {
@@ -58,7 +58,7 @@ async function errorPrint(err, rowno, responseBody, table) {
 }
 
 async function ajaxCall1() {
-  console.log("inside 1");
+    console.log("inside 1");
     name = document.getElementById("fname").innerHTML;
     var config = {
         "method": "POST",
@@ -68,7 +68,7 @@ async function ajaxCall1() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -82,7 +82,7 @@ async function ajaxCall1() {
                         }
                     };
                     var functions = catalyst.function;
-                    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+                    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
                     var functionPromise = functionObject.execute(config);
                     functionPromise
                         .then((response) => {
@@ -126,7 +126,7 @@ async function ajaxCall1() {
             document.getElementById("row1").style.color = 'red';
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall2() {
@@ -138,7 +138,7 @@ async function ajaxCall2() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -151,7 +151,7 @@ async function ajaxCall2() {
             errorPrint(err, 2, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall3() {
@@ -163,7 +163,7 @@ async function ajaxCall3() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -176,7 +176,7 @@ async function ajaxCall3() {
             errorPrint(err, 3, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall4() {
@@ -188,7 +188,7 @@ async function ajaxCall4() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -201,7 +201,7 @@ async function ajaxCall4() {
             errorPrint(err, 4, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall5() {
@@ -213,7 +213,7 @@ async function ajaxCall5() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -226,7 +226,7 @@ async function ajaxCall5() {
             errorPrint(err, 5, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall6() {
@@ -238,7 +238,7 @@ async function ajaxCall6() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -251,7 +251,7 @@ async function ajaxCall6() {
             errorPrint(err, 6, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall7() {
@@ -265,7 +265,7 @@ async function ajaxCall7() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -278,7 +278,7 @@ async function ajaxCall7() {
             errorPrint(err, 7, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall8() {
@@ -290,7 +290,7 @@ async function ajaxCall8() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -303,7 +303,7 @@ async function ajaxCall8() {
             errorPrint(err, 8, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall9() {
@@ -315,7 +315,7 @@ async function ajaxCall9() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -328,7 +328,7 @@ async function ajaxCall9() {
             errorPrint(err, 9, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall10() {
@@ -340,7 +340,7 @@ async function ajaxCall10() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -353,7 +353,7 @@ async function ajaxCall10() {
             errorPrint(err, 10, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall96() {
@@ -365,7 +365,7 @@ async function ajaxCall96() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -378,7 +378,7 @@ async function ajaxCall96() {
             errorPrint(err, 96, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall97() {
@@ -390,7 +390,7 @@ async function ajaxCall97() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -403,7 +403,7 @@ async function ajaxCall97() {
             errorPrint(err, 97, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall98() {
@@ -415,7 +415,7 @@ async function ajaxCall98() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343734); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("catalystAutomationProject"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -428,7 +428,7 @@ async function ajaxCall98() {
             errorPrint(err, 98, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 //AUTHENTICATION
 async function ajaxCall11() {
@@ -440,7 +440,7 @@ async function ajaxCall11() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343727); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("AuthenticationCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -454,7 +454,7 @@ async function ajaxCall11() {
                         }
                     };
                     var functions = catalyst.function;
-                    var functionObject = functions.functionId(1926000004343727); //can pass Function Id or Function Name as argument
+                    var functionObject = functions.functionId("AuthenticationCases"); //can pass Function Id or Function Name as argument
                     var functionPromise = functionObject.execute(config);
                     functionPromise
                         .then((response) => {
@@ -499,7 +499,7 @@ async function ajaxCall11() {
             document.getElementById("row11").style.color = 'red';
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall12() {
@@ -511,7 +511,7 @@ async function ajaxCall12() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343727); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("AuthenticationCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -524,7 +524,7 @@ async function ajaxCall12() {
             errorPrint(err, 12, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall13() {
@@ -536,7 +536,7 @@ async function ajaxCall13() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343727); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("AuthenticationCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -550,7 +550,7 @@ async function ajaxCall13() {
                         }
                     };
                     var functions = catalyst.function;
-                    var functionObject = functions.functionId(1926000004343727); //can pass Function Id or Function Name as argument
+                    var functionObject = functions.functionId("AuthenticationCases"); //can pass Function Id or Function Name as argument
                     var functionPromise = functionObject.execute(config);
                     functionPromise
                         .then((response) => {
@@ -595,7 +595,7 @@ async function ajaxCall13() {
             document.getElementById("row13").style.color = 'red';
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall14() {
@@ -607,7 +607,7 @@ async function ajaxCall14() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343727); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("AuthenticationCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -619,7 +619,7 @@ async function ajaxCall14() {
         .catch((err) => {
             errorPrint(err, 14, responseBody, table);
         });
-        return "completed";
+    return "completed";
 }
 
 //CACHE CASES
@@ -632,7 +632,7 @@ async function ajaxCall15() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343713); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CacheCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -645,7 +645,7 @@ async function ajaxCall15() {
             errorPrint(err, 15, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall16() {
@@ -657,7 +657,7 @@ async function ajaxCall16() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343713); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CacheCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -670,7 +670,7 @@ async function ajaxCall16() {
             errorPrint(err, 16, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall17() {
@@ -682,7 +682,7 @@ async function ajaxCall17() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343713); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CacheCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -695,7 +695,7 @@ async function ajaxCall17() {
             errorPrint(err, 17, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall18() {
@@ -707,7 +707,7 @@ async function ajaxCall18() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343713); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CacheCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -720,7 +720,7 @@ async function ajaxCall18() {
             errorPrint(err, 18, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall19() {
@@ -732,7 +732,7 @@ async function ajaxCall19() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343713); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CacheCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -745,7 +745,7 @@ async function ajaxCall19() {
             errorPrint(err, 19, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall20() {
@@ -757,7 +757,7 @@ async function ajaxCall20() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343713); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CacheCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -770,7 +770,7 @@ async function ajaxCall20() {
             errorPrint(err, 20, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall21() {
@@ -782,7 +782,7 @@ async function ajaxCall21() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343713); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CacheCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -793,7 +793,7 @@ async function ajaxCall21() {
         .catch((err) => {
             errorPrint(err, 21, responseBody, table);
         });
-        return "completed";
+    return "completed";
 }
 
 //CRON CASES
@@ -806,7 +806,7 @@ async function ajaxCall22() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343706); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CronCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -819,7 +819,7 @@ async function ajaxCall22() {
             errorPrint(err, 22, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall23() {
@@ -831,7 +831,7 @@ async function ajaxCall23() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343706); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CronCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -844,7 +844,7 @@ async function ajaxCall23() {
             errorPrint(err, 23, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall24() {
@@ -856,7 +856,7 @@ async function ajaxCall24() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343706); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CronCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -869,7 +869,7 @@ async function ajaxCall24() {
             errorPrint(err, 24, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall25() {
@@ -881,7 +881,7 @@ async function ajaxCall25() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343706); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CronCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -894,7 +894,7 @@ async function ajaxCall25() {
             errorPrint(err, 25, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall26() {
@@ -906,7 +906,7 @@ async function ajaxCall26() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343706); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CronCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -919,7 +919,7 @@ async function ajaxCall26() {
             errorPrint(err, 26, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall27() {
@@ -931,7 +931,7 @@ async function ajaxCall27() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343706); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CronCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -942,7 +942,7 @@ async function ajaxCall27() {
         .catch((err) => {
             errorPrint(err, 27, responseBody, table);
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall62() {
@@ -955,7 +955,7 @@ async function ajaxCall62() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343706); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CronCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -968,7 +968,7 @@ async function ajaxCall62() {
             errorPrint(err, 62, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 //FILE STORE
@@ -981,7 +981,7 @@ async function ajaxCall28() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343720); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("FileStore"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -995,7 +995,7 @@ async function ajaxCall28() {
                         }
                     };
                     var functions = catalyst.function;
-                    var functionObject = functions.functionId(1926000004343720); //can pass Function Id or Function Name as argument
+                    var functionObject = functions.functionId("FileStore"); //can pass Function Id or Function Name as argument
                     var functionPromise = functionObject.execute(config);
                     functionPromise
                         .then((response) => {
@@ -1040,7 +1040,7 @@ async function ajaxCall28() {
             document.getElementById("row28").style.color = 'red';
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1052,7 +1052,7 @@ async function ajaxCall29() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343720); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("FileStore"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1065,7 +1065,7 @@ async function ajaxCall29() {
             errorPrint(err, 29, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1078,7 +1078,7 @@ async function ajaxCall30() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343720); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("FileStore"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1091,7 +1091,7 @@ async function ajaxCall30() {
             errorPrint(err, 30, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1104,7 +1104,7 @@ async function ajaxCall31() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343720); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("FileStore"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1117,7 +1117,7 @@ async function ajaxCall31() {
             errorPrint(err, 31, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1130,7 +1130,7 @@ async function ajaxCall32() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343720); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("FileStore"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1143,7 +1143,7 @@ async function ajaxCall32() {
             errorPrint(err, 32, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1156,7 +1156,7 @@ async function ajaxCall33() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343720); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("FileStore"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1167,7 +1167,7 @@ async function ajaxCall33() {
         .catch((err) => {
             errorPrint(err, 33, responseBody, table);
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1181,7 +1181,7 @@ async function ajaxCall34() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343678); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("FunctionCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1194,7 +1194,7 @@ async function ajaxCall34() {
             errorPrint(err, 34, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall35() {
@@ -1205,7 +1205,7 @@ async function ajaxCall35() {
     // "args":{"case":"testCase35","name":name}
     // };
     // var functions = catalyst.function;
-    // var functionObject = functions.functionId(1926000004343678); //can pass Function Id or Function Name as argument
+    // var functionObject = functions.functionId("FunctionCases"); //can pass Function Id or Function Name as argument
     // var functionPromise = functionObject.execute(config); await functionPromise;
     // functionPromise
     // .then((response) => {
@@ -1250,7 +1250,7 @@ async function ajaxCall36() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343657); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("MailCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1263,7 +1263,7 @@ async function ajaxCall36() {
             errorPrint(err, 36, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1276,7 +1276,7 @@ async function ajaxCall37() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343657); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("MailCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1289,7 +1289,7 @@ async function ajaxCall37() {
             errorPrint(err, 37, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1302,7 +1302,7 @@ async function ajaxCall38() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343657); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("MailCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1313,7 +1313,7 @@ async function ajaxCall38() {
         .catch((err) => {
             errorPrint(err, 38, responseBody, table);
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1327,7 +1327,7 @@ async function ajaxCall39() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343671); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SearchCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1341,7 +1341,7 @@ async function ajaxCall39() {
             errorPrint(err, 39, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1354,7 +1354,7 @@ async function ajaxCall40() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343671); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SearchCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1367,7 +1367,7 @@ async function ajaxCall40() {
             errorPrint(err, 40, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1380,7 +1380,7 @@ async function ajaxCall41() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343671); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SearchCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1393,7 +1393,7 @@ async function ajaxCall41() {
             errorPrint(err, 41, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1406,7 +1406,7 @@ async function ajaxCall42() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343671); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SearchCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1419,7 +1419,7 @@ async function ajaxCall42() {
             errorPrint(err, 42, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1432,7 +1432,7 @@ async function ajaxCall43() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343671); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SearchCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1445,7 +1445,7 @@ async function ajaxCall43() {
             errorPrint(err, 43, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1458,7 +1458,7 @@ async function ajaxCall88() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343671); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SearchCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1471,7 +1471,7 @@ async function ajaxCall88() {
             errorPrint(err, 88, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1484,7 +1484,7 @@ async function ajaxCall89() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343671); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SearchCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1497,7 +1497,7 @@ async function ajaxCall89() {
             errorPrint(err, 89, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1510,7 +1510,7 @@ async function ajaxCall90() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343671); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SearchCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1521,7 +1521,7 @@ async function ajaxCall90() {
         .catch((err) => {
             errorPrint(err, 90, responseBody, table);
         });
-        return "completed";
+    return "completed";
 
 }
 //ZCQL CASES
@@ -1534,7 +1534,7 @@ async function ajaxCall44() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1547,7 +1547,7 @@ async function ajaxCall44() {
             errorPrint(err, 44, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1560,7 +1560,7 @@ async function ajaxCall45() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1573,7 +1573,7 @@ async function ajaxCall45() {
             errorPrint(err, 45, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1586,7 +1586,7 @@ async function ajaxCall46() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1599,7 +1599,7 @@ async function ajaxCall46() {
             errorPrint(err, 46, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1612,7 +1612,7 @@ async function ajaxCall47() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1625,7 +1625,7 @@ async function ajaxCall47() {
             errorPrint(err, 47, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1638,7 +1638,7 @@ async function ajaxCall48() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1651,7 +1651,7 @@ async function ajaxCall48() {
             errorPrint(err, 48, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1664,7 +1664,7 @@ async function ajaxCall49() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1677,7 +1677,7 @@ async function ajaxCall49() {
             errorPrint(err, 49, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1690,7 +1690,7 @@ async function ajaxCall50() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1703,7 +1703,7 @@ async function ajaxCall50() {
             errorPrint(err, 50, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1716,7 +1716,7 @@ async function ajaxCall51() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1729,7 +1729,7 @@ async function ajaxCall51() {
             errorPrint(err, 51, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1742,7 +1742,7 @@ async function ajaxCall52() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1755,7 +1755,7 @@ async function ajaxCall52() {
             errorPrint(err, 52, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1768,7 +1768,7 @@ async function ajaxCall53() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1781,7 +1781,7 @@ async function ajaxCall53() {
             errorPrint(err, 53, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1794,7 +1794,7 @@ async function ajaxCall54() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1805,7 +1805,7 @@ async function ajaxCall54() {
         .catch((err) => {
             errorPrint(err, 54, responseBody, table);
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1818,7 +1818,7 @@ async function ajaxCall63() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1831,7 +1831,7 @@ async function ajaxCall63() {
             errorPrint(err, 63, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1844,7 +1844,7 @@ async function ajaxCall64() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1857,7 +1857,7 @@ async function ajaxCall64() {
             errorPrint(err, 64, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1870,7 +1870,7 @@ async function ajaxCall65() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1883,7 +1883,7 @@ async function ajaxCall65() {
             errorPrint(err, 65, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1896,7 +1896,7 @@ async function ajaxCall66() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1909,7 +1909,7 @@ async function ajaxCall66() {
             errorPrint(err, 66, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1922,7 +1922,7 @@ async function ajaxCall67() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1935,7 +1935,7 @@ async function ajaxCall67() {
             errorPrint(err, 67, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1948,7 +1948,7 @@ async function ajaxCall68() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1961,7 +1961,7 @@ async function ajaxCall68() {
             errorPrint(err, 68, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -1974,7 +1974,7 @@ async function ajaxCall69() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -1987,7 +1987,7 @@ async function ajaxCall69() {
             errorPrint(err, 69, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2000,7 +2000,7 @@ async function ajaxCall70() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2013,7 +2013,7 @@ async function ajaxCall70() {
             errorPrint(err, 70, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2026,7 +2026,7 @@ async function ajaxCall71() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2039,7 +2039,7 @@ async function ajaxCall71() {
             errorPrint(err, 71, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2052,7 +2052,7 @@ async function ajaxCall72() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2065,7 +2065,7 @@ async function ajaxCall72() {
             errorPrint(err, 72, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2078,7 +2078,7 @@ async function ajaxCall73() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2091,7 +2091,7 @@ async function ajaxCall73() {
             errorPrint(err, 73, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2104,7 +2104,7 @@ async function ajaxCall74() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2117,7 +2117,7 @@ async function ajaxCall74() {
             errorPrint(err, 74, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2130,7 +2130,7 @@ async function ajaxCall75() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2143,7 +2143,7 @@ async function ajaxCall75() {
             errorPrint(err, 75, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2156,7 +2156,7 @@ async function ajaxCall76() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2169,7 +2169,7 @@ async function ajaxCall76() {
             errorPrint(err, 76, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2182,7 +2182,7 @@ async function ajaxCall77() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2195,7 +2195,7 @@ async function ajaxCall77() {
             errorPrint(err, 77, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2208,7 +2208,7 @@ async function ajaxCall78() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2221,7 +2221,7 @@ async function ajaxCall78() {
             errorPrint(err, 78, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2234,7 +2234,7 @@ async function ajaxCall79() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2247,7 +2247,7 @@ async function ajaxCall79() {
             errorPrint(err, 79, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2260,7 +2260,7 @@ async function ajaxCall80() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2273,7 +2273,7 @@ async function ajaxCall80() {
             errorPrint(err, 80, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2286,7 +2286,7 @@ async function ajaxCall81() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2299,7 +2299,7 @@ async function ajaxCall81() {
             errorPrint(err, 81, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2312,7 +2312,7 @@ async function ajaxCall82() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2325,7 +2325,7 @@ async function ajaxCall82() {
             errorPrint(err, 82, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall83() {
@@ -2337,7 +2337,7 @@ async function ajaxCall83() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2350,7 +2350,7 @@ async function ajaxCall83() {
             errorPrint(err, 83, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall84() {
@@ -2362,7 +2362,7 @@ async function ajaxCall84() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2375,7 +2375,7 @@ async function ajaxCall84() {
             errorPrint(err, 84, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall85() {
@@ -2387,7 +2387,7 @@ async function ajaxCall85() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2400,7 +2400,7 @@ async function ajaxCall85() {
             errorPrint(err, 85, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall86() {
@@ -2412,7 +2412,7 @@ async function ajaxCall86() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2425,7 +2425,7 @@ async function ajaxCall86() {
             errorPrint(err, 86, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2438,7 +2438,7 @@ async function ajaxCall87() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2451,7 +2451,7 @@ async function ajaxCall87() {
             errorPrint(err, 87, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2464,7 +2464,7 @@ async function ajaxCall91() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2477,7 +2477,7 @@ async function ajaxCall91() {
             errorPrint(err, 91, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2490,7 +2490,7 @@ async function ajaxCall92() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2501,7 +2501,7 @@ async function ajaxCall92() {
         .catch((err) => {
             errorPrint(err, 92, responseBody, table);
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2514,7 +2514,7 @@ async function ajaxCall93() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2527,7 +2527,7 @@ async function ajaxCall93() {
             errorPrint(err, 93, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2540,7 +2540,7 @@ async function ajaxCall94() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2553,7 +2553,7 @@ async function ajaxCall94() {
             errorPrint(err, 94, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2566,24 +2566,24 @@ async function ajaxCall95() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343692); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZCQLCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
             response.json().then(responseBody => {
                 responseValidation(responseBody, 95, table);
                 //    checkAllCasesRun();
-              //  countCalculation();
+                //  countCalculation();
 
             });
         })
         .catch((err) => {
             errorPrint(err, 95, responseBody, table);
             //  checkAllCasesRun();
-          //  countCalculation();
+            //  countCalculation();
 
         });
-        return "completed";
+    return "completed";
 
 }
 //ZIA CASES
@@ -2596,7 +2596,7 @@ async function ajaxCall55() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2609,7 +2609,7 @@ async function ajaxCall55() {
             errorPrint(err, 55, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2622,7 +2622,7 @@ async function ajaxCall56() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2635,7 +2635,7 @@ async function ajaxCall56() {
             errorPrint(err, 56, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2648,7 +2648,7 @@ async function ajaxCall57() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2661,7 +2661,7 @@ async function ajaxCall57() {
             errorPrint(err, 57, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2674,7 +2674,7 @@ async function ajaxCall58() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2687,7 +2687,7 @@ async function ajaxCall58() {
             errorPrint(err, 58, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2700,7 +2700,7 @@ async function ajaxCall59() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2713,7 +2713,7 @@ async function ajaxCall59() {
             errorPrint(err, 59, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2726,7 +2726,7 @@ async function ajaxCall60() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2739,7 +2739,7 @@ async function ajaxCall60() {
             errorPrint(err, 60, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
@@ -2752,7 +2752,7 @@ async function ajaxCall61() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config); await functionPromise;
     functionPromise
         .then((response) => {
@@ -2765,12 +2765,12 @@ async function ajaxCall61() {
             errorPrint(err, 61, responseBody, table);
 
         });
-        return "completed";
+    return "completed";
 
 }
 
 
- async function ajaxCall99() {
+async function ajaxCall99() {
     var config = {
         "method": "POST",
         "args": {
@@ -2779,7 +2779,7 @@ async function ajaxCall61() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000006254260); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CircuitsCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config);
     await functionPromise;
     functionPromise
@@ -2791,9 +2791,9 @@ async function ajaxCall61() {
         .catch((err) => {
             errorPrint(err, 99, responseBody, table);
         });
-        return "completed";
+    return "completed";
 }
- async function ajaxCall100() {
+async function ajaxCall100() {
     var config = {
         "method": "POST",
         "args": {
@@ -2802,7 +2802,7 @@ async function ajaxCall61() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000006254260); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("CircuitsCases"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config);
     await functionPromise;
     functionPromise
@@ -2814,203 +2814,276 @@ async function ajaxCall61() {
         .catch((err) => {
             errorPrint(err, 100, responseBody, table);
         });
-        return "completed";
+    return "completed";
 }
 
 async function ajaxCall101() {
-   var config = {
-       "method": "POST",
-       "args": {
-           "case": "testCase101",
-           "name": name
-       }
-   };
-   var functions = catalyst.function;
-   var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
-   var functionPromise = functionObject.execute(config);
-   await functionPromise;
-   functionPromise
-       .then((response) => {
-           response.json().then(responseBody => {
-               responseValidation(responseBody, 101, table);
-           });
-       })
-       .catch((err) => {
-           errorPrint(err, 101, responseBody, table);
-       });
-       return "completed";
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase101",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 101, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 101, responseBody, table);
+        });
+    return "completed";
 }
 async function ajaxCall102() {
-   var config = {
-       "method": "POST",
-       "args": {
-           "case": "testCase102",
-           "name": name
-       }
-   };
-   var functions = catalyst.function;
-   var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
-   var functionPromise = functionObject.execute(config);
-   await functionPromise;
-   functionPromise
-       .then((response) => {
-           response.json().then(responseBody => {
-               responseValidation(responseBody, 102, table);
-           });
-       })
-       .catch((err) => {
-           errorPrint(err, 102, responseBody, table);
-       });
-       return "completed";
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase102",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 102, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 102, responseBody, table);
+        });
+    return "completed";
 }
 async function ajaxCall103() {
-   var config = {
-       "method": "POST",
-       "args": {
-           "case": "testCase103",
-           "name": name
-       }
-   };
-   var functions = catalyst.function;
-   var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
-   var functionPromise = functionObject.execute(config);
-   await functionPromise;
-   functionPromise
-       .then((response) => {
-           response.json().then(responseBody => {
-               responseValidation(responseBody, 103, table);
-           });
-       })
-       .catch((err) => {
-           errorPrint(err, 103, responseBody, table);
-       });
-       return "completed";
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase103",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 103, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 103, responseBody, table);
+        });
+    return "completed";
 }
 async function ajaxCall104() {
-   var config = {
-       "method": "POST",
-       "args": {
-           "case": "testCase104",
-           "name": name
-       }
-   };
-   var functions = catalyst.function;
-   var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
-   var functionPromise = functionObject.execute(config);
-   await functionPromise;
-   functionPromise
-       .then((response) => {
-           response.json().then(responseBody => {
-               responseValidation(responseBody, 104, table);
-           });
-       })
-       .catch((err) => {
-           errorPrint(err, 104, responseBody, table);
-       });
-       return "completed";
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase104",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 104, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 104, responseBody, table);
+        });
+    return "completed";
 }
 async function ajaxCall105() {
-   var config = {
-       "method": "POST",
-       "args": {
-           "case": "testCase105",
-           "name": name
-       }
-   };
-   var functions = catalyst.function;
-   var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
-   var functionPromise = functionObject.execute(config);
-   await functionPromise;
-   functionPromise
-       .then((response) => {
-           response.json().then(responseBody => {
-               responseValidation(responseBody, 105, table);
-           });
-       })
-       .catch((err) => {
-           errorPrint(err, 105, responseBody, table);
-       });
-       return "completed";
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase105",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 105, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 105, responseBody, table);
+        });
+    return "completed";
 }
 async function ajaxCall106() {
-   var config = {
-       "method": "POST",
-       "args": {
-           "case": "testCase106",
-           "name": name
-       }
-   };
-   var functions = catalyst.function;
-   var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
-   var functionPromise = functionObject.execute(config);
-   await functionPromise;
-   functionPromise
-       .then((response) => {
-           response.json().then(responseBody => {
-               responseValidation(responseBody, 106, table);
-           });
-       })
-       .catch((err) => {
-           errorPrint(err, 106, responseBody, table);
-       });
-       return "completed";
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase106",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 106, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 106, responseBody, table);
+        });
+    return "completed";
 }
 async function ajaxCall107() {
-   var config = {
-       "method": "POST",
-       "args": {
-           "case": "testCase107",
-           "name": name
-       }
-   };
-   var functions = catalyst.function;
-   var functionObject = functions.functionId(1926000004343650); //can pass Function Id or Function Name as argument
-   var functionPromise = functionObject.execute(config);
-   await functionPromise;
-   functionPromise
-       .then((response) => {
-           response.json().then(responseBody => {
-               responseValidation(responseBody, 107, table);
-           });
-       })
-       .catch((err) => {
-           errorPrint(err, 107, responseBody, table);
-       });
-       return "completed";
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase107",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ZiaCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 107, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 107, responseBody, table);
+        });
+    return "completed";
 }
+
+//SmartBrowz cases
+async function ajaxCall108() {
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase108",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("SmartBrowzCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 108, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 108, responseBody, table);
+        });
+    return "completed";
+}
+async function ajaxCall109() {
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase109",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("SmartBrowzCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 109, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 109, responseBody, table);
+        });
+    return "completed";
+}
+async function ajaxCall110() {
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase110",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("SmartBrowzCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 110, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 110, responseBody, table);
+        });
+    return "completed";
+}
+
+
 async function validateFunction() {
     window.alert("Please enter a valid email address");
 }
 
-async function fillTestCases(){
-  var temp="";
-  var val1="";
-  var val2="";
-  console.log("inside fillTestCases");
-  catalyst.auth.isUserAuthenticated().then(result => {
-    console.log("auth check");
-      var first_name = "First Name: " + result.content.first_name;
-      console.log(first_name);
-      document.getElementById("fname").innerHTML = first_name;
-    //  document.getElementById("fname").style.display="block";
-  }).catch(err => {});
-  var table = document.getElementById("data_table");
-  var query="Select * from TestcaseTable ORDER BY ID ;";
-  var zcql = catalyst.ZCatalystQL;
- var zcqlPromise  = zcql.executeQuery(query);
- zcqlPromise
+async function fillTestCases() {
+    var temp = "";
+    var val1 = "";
+    var val2 = "";
+    console.log("inside fillTestCases");
+    catalyst.auth.isUserAuthenticated().then(result => {
+        console.log("auth check");
+        var first_name = "First Name: " + result.content.first_name;
+        console.log(first_name);
+        document.getElementById("fname").innerHTML = first_name;
+        //  document.getElementById("fname").style.display="block";
+    }).catch(err => { });
+    var table = document.getElementById("data_table");
+    var query = "Select * from TestcaseTable ORDER BY ID ;";
+    var zcql = catalyst.ZCatalystQL;
+    var zcqlPromise = zcql.executeQuery(query);
+    zcqlPromise
         .then((response) => {
-            for(var itr=0;itr<response.content.length;itr++){
-              let table_response = response.content[itr].TestcaseTable;
-              let row = table.insertRow(-1);
-              let c1 = row.insertCell(0);
-              let c2 = row.insertCell(1);
-              let c3 = row.insertCell(2);
-              c3.id="row"+(itr+1);
-              let c4 = row.insertCell(3);
-              c1.innerText=table_response.ID;
-              c2.innerText=table_response.Case_Description
-              c4.innerText=table_response.Component;
+            for (var itr = 0; itr < response.content.length; itr++) {
+                let table_response = response.content[itr].TestcaseTable;
+                let row = table.insertRow(-1);
+                let c1 = row.insertCell(0);
+                let c2 = row.insertCell(1);
+                let c3 = row.insertCell(2);
+                c3.id = "row" + (itr + 1);
+                let c4 = row.insertCell(3);
+                c1.innerText = table_response.ID;
+                c2.innerText = table_response.Case_Description
+                c4.innerText = table_response.Component;
             }
         })
         .catch((err) => {
@@ -3019,13 +3092,13 @@ async function fillTestCases(){
 
 }
 
-async function caseOrder(){
-  for(var itr=1;itr<=table.rows.length-1;itr++){
-    var functionName="ajaxCall"+itr;
-    functionsArray.push(window[functionName]);
-  }
-  console.log(functionsArray);
-  for (var func of functionsArray) {
+async function caseOrder() {
+    for (var itr = 1; itr <= table.rows.length - 1; itr++) {
+        var functionName = "ajaxCall" + itr;
+        functionsArray.push(window[functionName]);
+    }
+    console.log(functionsArray);
+    for (var func of functionsArray) {
         await func();
     }
     countCalculation();
@@ -3033,7 +3106,7 @@ async function caseOrder(){
 }
 function countCalculation() {
     timeEnd();
-    var flag=false;
+    var flag = false;
     var value = "";
     var failCount = 0;
     var passPercentage = 0;
@@ -3051,7 +3124,7 @@ function countCalculation() {
     passPercentage = Math.round(passPercentage * 100);
     mailContent = mailContent + "</table><br><br><b> Total number of failed cases - " + failCount + "</b><br><br><b>Passed Cases percentage - " + passPercentage + "%</b></center>";
     document.getElementById("count").innerHTML = "<br><br>Total number of failures - " + failCount;
-    document.getElementById("percentage").innerHTML = "Cases passed percentage - "+passPercentage;
+    document.getElementById("percentage").innerHTML = "Cases passed percentage - " + passPercentage;
     mailSend();
     totalTime();
 }
@@ -3065,11 +3138,11 @@ function mailSend() {
         }
     };
     var functions = catalyst.function;
-    var functionObject = functions.functionId(1926000004343643); //can pass Function Id or Function Name as argument
+    var functionObject = functions.functionId("SendMail"); //can pass Function Id or Function Name as argument
     var functionPromise = functionObject.execute(config);
     functionPromise
         .then((response) => {
-            response.json().then(responseBody => {});
+            response.json().then(responseBody => { });
         })
-        .catch((err) => {});
+        .catch((err) => { });
 }
