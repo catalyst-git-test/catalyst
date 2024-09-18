@@ -111,11 +111,17 @@ public class SmartBrowz implements CatalystAdvancedIOHandler {
 			Long fileID = folderDetails.uploadFile(file).getFileId();
 
 			// Check file existence
-			if (folderDetails.getFile(fileID) == null) {
+			String message = "";
+			if (folderDetails.getFile(fileID) == null){
 				flag = true;
 				responseData.put("message",
 						"File Processed. Issue in upload as a file in File Store or File not found in File Store");
-			} else {
+			} 
+			else if (folderDetails.getFile(fileID).getFileSize() < 20) {
+				flag = true;
+				responseData.put("message",
+						"File Processed and uploaded. But file size is less than 20KB. Expected size is more than 20KB");
+			}else {
 				responseData.put("message",
 						"PDF is generated from the template and upload as a PDF file in File Store and verified");
 				folderDetails.deleteFile(fileID);
@@ -127,15 +133,8 @@ public class SmartBrowz implements CatalystAdvancedIOHandler {
 			response.setStatus(200);
 		} catch (Exception e) {
 			if (name.contains("app") && e.toString().contains(
-					"com.zc.exception.ZCServerException. Caused by : No privileges to perform this action. ZCQL QUERY ERROR")) {
+					"com.zc.exception.ZCServerException. Caused by : UnAuthorized")) {
 				responseData.put("message", "Expected exception is thrown for app user");
-				responseData.put("flag", flag);
-				response.setContentType("application/json");
-				response.getWriter().write(responseData.toString());
-				response.setStatus(200);
-			} else if (e.toString().contains(
-					"com.zc.exception.ZCServerException. Caused by : Order By/Group By is not supported for ENCRYPTED Column ZCQL QUERY ERROR")) {
-				responseData.put("message", "Expected exception is thrown for order by encrypted column");
 				responseData.put("flag", flag);
 				response.setContentType("application/json");
 				response.getWriter().write(responseData.toString());
@@ -189,10 +188,15 @@ public class SmartBrowz implements CatalystAdvancedIOHandler {
 			Long fileID = folderDetails.uploadFile(file).getFileId();
 
 			// Check file existence
-			if (folderDetails.getFile(fileID) == null) {
+			if (folderDetails.getFile(fileID) == null){
 				flag = true;
 				responseData.put("message",
 						"File Processed. Issue in upload as a file in File Store or File not found in File Store");
+			} 
+			else if (folderDetails.getFile(fileID).getFileSize() < 20) {
+				flag = true;
+				responseData.put("message",
+						"File Processed and uploaded. But file size is less than 20KB. Expected size is more than 20KB");
 			} else {
 				responseData.put("message",
 						"Convertion of PDF from HTML is successful and upload as a PDF file in File Store and verified");
@@ -205,15 +209,8 @@ public class SmartBrowz implements CatalystAdvancedIOHandler {
 			response.setStatus(200);
 		} catch (Exception e) {
 			if (name.contains("app") && e.toString().contains(
-					"com.zc.exception.ZCServerException. Caused by : No privileges to perform this action. ZCQL QUERY ERROR")) {
+					"com.zc.exception.ZCServerException. Caused by : UnAuthorized")) {
 				responseData.put("message", "Expected exception is thrown for app user");
-				responseData.put("flag", flag);
-				response.setContentType("application/json");
-				response.getWriter().write(responseData.toString());
-				response.setStatus(200);
-			} else if (e.toString().contains(
-					"com.zc.exception.ZCServerException. Caused by : Order By/Group By is not supported for ENCRYPTED Column ZCQL QUERY ERROR")) {
-				responseData.put("message", "Expected exception is thrown for order by encrypted column");
 				responseData.put("flag", flag);
 				response.setContentType("application/json");
 				response.getWriter().write(responseData.toString());
@@ -266,10 +263,15 @@ public class SmartBrowz implements CatalystAdvancedIOHandler {
 			Long fileID = folderDetails.uploadFile(file).getFileId();
 
 			// Check file existence
-			if (folderDetails.getFile(fileID) == null) {
+			if (folderDetails.getFile(fileID) == null){
 				flag = true;
 				responseData.put("message",
 						"File Processed. Issue in upload as a file in File Store or File not found in File Store");
+			} 
+			else if (folderDetails.getFile(fileID).getFileSize() < 20) {
+				flag = true;
+				responseData.put("message",
+						"File Processed and uploaded. But file size is less than 20KB. Expected size is more than 20KB");
 			} else {
 				responseData.put("message",
 						"Screenshot taken from URL and upload as a JPEG file in FileStore and verified");
@@ -282,15 +284,8 @@ public class SmartBrowz implements CatalystAdvancedIOHandler {
 			response.setStatus(200);
 		} catch (Exception e) {
 			if (name.contains("app") && e.toString().contains(
-					"com.zc.exception.ZCServerException. Caused by : No privileges to perform this action. ZCQL QUERY ERROR")) {
+					"com.zc.exception.ZCServerException. Caused by : UnAuthorized")) {
 				responseData.put("message", "Expected exception is thrown for app user");
-				responseData.put("flag", flag);
-				response.setContentType("application/json");
-				response.getWriter().write(responseData.toString());
-				response.setStatus(200);
-			} else if (e.toString().contains(
-					"com.zc.exception.ZCServerException. Caused by : Order By/Group By is not supported for ENCRYPTED Column ZCQL QUERY ERROR")) {
-				responseData.put("message", "Expected exception is thrown for order by encrypted column");
 				responseData.put("flag", flag);
 				response.setContentType("application/json");
 				response.getWriter().write(responseData.toString());
