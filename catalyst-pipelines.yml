@@ -17,5 +17,5 @@ stages:
     jobs:
       - catalyst-deploy
 variables:
-  CATALYST_TOKEN: m_1004.fcbbb0c781da2425deb1557a2492f4dd.45ae8dfad4523ba302394468dc9b55dd
+  CATALYST_TOKEN: 1004.fcbbb0c781da2425deb1557a2492f4dd.45ae8dfad4523ba302394468dc9b55dd
   BRANCH_NAME: ConnectorTest
