@@ -1,8 +1,4 @@
 version: 1.0
-pipeline-when:
-    equal:
-        - << event.ref >>
-        - << env.BRANCH_NAME >>
 runners:
   high:
     config-id: 3
