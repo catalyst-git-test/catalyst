@@ -3050,6 +3050,55 @@ async function ajaxCall110() {
     return "completed";
 }
 
+//Connectors cases
+async function ajaxCall111() {
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase111",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ConnectorCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 111, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 111, responseBody, table);
+        });
+    return "completed";
+}
+async function ajaxCall112() {
+    var config = {
+        "method": "POST",
+        "args": {
+            "case": "testCase112",
+            "name": name
+        }
+    };
+    var functions = catalyst.function;
+    var functionObject = functions.functionId("ConnectorCases"); //can pass Function Id or Function Name as argument
+    var functionPromise = functionObject.execute(config);
+    await functionPromise;
+    functionPromise
+        .then((response) => {
+            response.json().then(responseBody => {
+                responseValidation(responseBody, 112, table);
+            });
+        })
+        .catch((err) => {
+            errorPrint(err, 112, responseBody, table);
+        });
+    return "completed";
+}
+
+
 
 async function validateFunction() {
     window.alert("Please enter a valid email address");
