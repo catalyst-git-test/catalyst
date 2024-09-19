@@ -1,28 +1,21 @@
 version: 1
-jobs:
-  hello:
-    steps:
-      - echo "Hello"
-  world:
-    steps:
-      - echo "World"
-  hello-world:
-    steps:
-      - echo "Hello World!"
-  git:
-    runner: run
-    steps:
-      - git init
-      - git add .
-      - git commit -m "test"
-      - git push -u origin main
-stages:
-  - name: build
-    jobs:
-      - - hello
-        - world
-      - hello-world
-      - git
+pipeline-when:
+  equal:
+    - << event.ref >>
+    - << env.BRANCH_NAME >>
 runners:
-  run:
-    config-id: 1
+  high:
+    config-id: 3
+jobs:
+  catalyst-deploy:
+    steps:
+      - npm install -g zcatalyst-cli@beta
+      - catalyst deploy
+stages:
+  - name: deploy
+    runner: high
+    jobs:
+      - catalyst-deploy
+variables:
+  CATALYST_TOKEN: m_1004.fcbbb0c781da2425deb1557a2492f4dd.45ae8dfad4523ba302394468dc9b55dd
+  BRANCH_NAME: ConnectorTest
