@@ -180,7 +180,7 @@ public class Connectors implements CatalystAdvancedIOHandler {
 		JSONObject responseData = new JSONObject();
 		try {
 			String accessToken = generateToken();
-			if(!Pattern.matches("^[a-z0-9.]+$", accessToken)) {
+			if((!Pattern.matches("^[a-z0-9.]+$", accessToken)) || !accessToken.startsWith("1000.")) {
 				flag = true;
 				responseData.put("message", "No proper access token is generated.\n" + accessToken);
 				responseData.put("Details",accessToken);

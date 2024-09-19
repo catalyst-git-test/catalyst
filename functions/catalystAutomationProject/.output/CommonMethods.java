@@ -1,5 +1,0 @@
-//$Id$
-
-public class CommonMethods {
-
-}
