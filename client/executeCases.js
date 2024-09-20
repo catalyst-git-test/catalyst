@@ -1,39 +1,49 @@
 var mailContent = "<center><b>List of failures in the report : </b><br><br> <table border=\"3\"><tr><th>Case id</th><th>Case description</th><th>Case result</th><th>Component</th></tr>";
+var startTime;
+var endTime;
 let functionsArray = [];
 async function executeCases() {
     window.table = document.getElementById("data_table");
+    if (document.getElementById("email").value == "@zohotest.com") {
+        await validateFunction();
+        return;
+    }
+    var but = document.getElementById("email");
+    document.getElementById('femail').innerHTML = but.value;
+    document.getElementById("form").style.display = "none";
+    document.getElementById('table1').style.display = "table";
     await timeStart();
     await caseOrder();
-    if (document.getElementById("email").value == "") {
-        await validateFunction();
-    } else {
-        var but = document.getElementById("rundatastore");
-        but.style.display = "none";
-    }
 }
 
 async function timeStart() {
     var x = document.getElementById("starttime");
-    var current = new Date();
-    x.innerHTML = current.toLocaleString();
+    startTime = new Date();
+    x.innerHTML = startTime.toLocaleString();
 }
 
 async function timeEnd() {
     var x = document.getElementById("endtime");
-    var current = new Date();
-    x.innerHTML = current.toLocaleString();
+    endTime = new Date();
+    x.innerHTML = endTime.toLocaleString();
 }
 
 async function totalTime() {
-    var x = document.getElementById("totaltime");
-    var timetaken = document.getElementById("endtime").value - document.getElementById("starttime").value;
-    var msec = timetaken;
-    var hh = Math.floor(msec / 1000 / 60 / 60);
-    msec -= hh * 1000 * 60 * 60;
-    var mm = Math.floor(msec / 1000 / 60);
-    msec -= mm * 1000 * 60;
-    var ss = Math.floor(msec / 1000);
-    msec -= ss * 1000;
+    var timetaken = endTime - startTime;
+    var hh = Math.floor(timetaken / (1000 * 60 * 60));
+    timetaken -= hh * 1000 * 60 * 60;
+    var mm = Math.floor(timetaken / (1000 * 60));
+    timetaken -= mm * 1000 * 60;
+    var ss = Math.floor(timetaken / 1000);
+    var total = '';
+    if(hh > 0){
+        total = hh + ' hours : ';
+    }
+    if(mm > 0 || hh > 0){
+        total += mm + ' minutes : ';
+    }
+    total += ss + ' seconds';
+    document.getElementById("totaltime").innerHTML = total;
 }
 
 async function responseValidation(responseBody, rowno, table) {
@@ -3110,10 +3120,10 @@ async function fillTestCases() {
     console.log("inside fillTestCases");
     catalyst.auth.isUserAuthenticated().then(result => {
         console.log("auth check");
-        var first_name = "First Name: " + result.content.first_name;
+        var first_name = result.content.first_name;
         console.log(first_name);
         document.getElementById("fname").innerHTML = first_name;
-        //  document.getElementById("fname").style.display="block";
+        document.getElementById("name").innerHTML = 'First name : ' + first_name;
     }).catch(err => { });
     var table = document.getElementById("data_table");
     var query = "Select * from TestcaseTable ORDER BY ID ;";
@@ -3171,8 +3181,8 @@ function countCalculation() {
     console.log(passPercentage);
     passPercentage = Math.round(passPercentage * 100);
     mailContent = mailContent + "</table><br><br><b> Total number of failed cases - " + failCount + "</b><br><br><b>Passed Cases percentage - " + passPercentage + "%</b></center>";
-    document.getElementById("count").innerHTML = "<br><br>Total number of failures - " + failCount;
-    document.getElementById("percentage").innerHTML = "Cases passed percentage - " + passPercentage;
+    document.getElementById("count").innerHTML = failCount;
+    document.getElementById("percentage").innerHTML = passPercentage + '%';
     mailSend();
     totalTime();
 }

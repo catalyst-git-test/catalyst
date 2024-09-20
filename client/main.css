@@ -1,8 +1,7 @@
 /* LET THE STYLING BEGIN */
 
-
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -13,31 +12,24 @@
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  justify-content: center;
 }
+
 .button1 {
   background-color: white;
   color: black;
   border: 2px solid #4CAF50;
+  justify-content: center;
 }
 
 .button1:hover {
   background-color: #4CAF50;
   color: white;
 }
-.cases_table{
-  margin-top: 50px;
-  margin-left: 20px;
-}
-.data_table,th,td{
-  border: 3px solid black;
-  border-collapse: collapse;
-}
-.empty{
-  margin: 20px 0;
-}
+
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -48,9 +40,124 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 div.login {
-    padding-top: 10px;
-    height: 260px;
-    width: 500px;
-    margin: 0 auto;
+  padding-top: 10px;
+  height: 260px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* New client UI */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+.title {
+    position: absolute; /* Position the text on top of the image */
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Offset the text to truly center it */
+    color: rgb(251, 246, 246);
+    font-size: 28px;
+    font-weight: 800;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.928);
+    font-family: URW Chancery L, cursive;
+}
+.title:hover {
+  text-shadow: 2px 2px 0px rgba(255, 0, 0, 0.8), /* Red */
+              4px 4px 0px rgb(11, 139, 251); /* Blue */
+}
+
+body {
+  background: 
+    linear-gradient(to right, 
+        #c42825 10%,
+        #e36d68 35%,
+        #7bbdc4 55%,
+        #25b7c4 100%);
+  font-family: 'Roboto', sans-serif;
+}
+table {
+  width: 95%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  overflow-wrap: break-word;
+}
+thead {
+  display: block; /* Prevent header from scrolling */
+  background-color: rgba(255, 255, 255, 0.333);
+  position: sticky; /* Keep header fixed when scrolling */
+  top: 0;
+  z-index: 1; /* Ensure it stays on top of content */
+}
+table, th, td {/*for border of all rows and cells */
+  border: 1px solid rgb(250, 249, 249); 
+}
+td {
+  padding: 15px;
+  vertical-align: middle;
+  font-weight: 300;
+}
+th {
+  padding: 20px 15px;
+  padding: auto;
+  text-transform: uppercase;
+}
+
+.table1 {
+  display: none;
+}
+table.table2 tbody {
+  display: block;
+  height: 580px; /* Adjust height to create scrolling for body */
+  overflow-y: auto; /* Enable vertical scrolling for tbody */
+  background: 
+    linear-gradient(to right, 
+        #c42825 10%,
+        #e36d68 35%,
+        #7bbdc4 55%,
+        #25b7c4 100%);
+  padding: auto;
+}
+table.table2 tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.167);
+}
+table.table2 th:nth-child(1), table.table2 td:nth-child(1) {
+  width: 5%;
+}
+table.table2 th:nth-child(2), table.table2 td:nth-child(2) {
+  width: 40%;
+}
+table.table2 th:nth-child(3), table.table2 td:nth-child(3) {
+  width: 45%;
+  font-weight: 450;
+}
+table.table2 th:nth-child(4), table.table2 td:nth-child(4) {
+  width: 10%;
+}
+::-webkit-scrollbar {/* For scroll design */
+  width: 0px;
+}
+.email-input {
+  width: 300px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #25b7c4; 
+  border-radius: 5px;          /* Rounded corners */
+  background-color: #ffffff;
+  color: #333333;
+  transition: border-color 0.3s ease;  /* Smooth border color transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: center;
 }

@@ -2,51 +2,77 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Single Page Run</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="executeCases.js"></script>
-    <script src="test.js"></script>
-    <script src="https://static.localzohocdn.com/catalyst/sdk/js/3.3.0/catalystWebSDK.js"></script>
-    <script src="/__catalyst/sdk/init.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Single Page Run</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="executeCases.js"></script>
+  <script src="test.js"></script>
+  <script src="https://static.localzohocdn.com/catalyst/sdk/js/3.3.0/catalystWebSDK.js"></script>
+  <script src="/__catalyst/sdk/init.js"></script>
 </head>
+
 <body onload="fillTestCases()">
   <font size="4">
-  <center>
-    <div class="username" id="username">
-      <p id="fname"></p>
-      <p id="starttime"></p>
-      <p id="endtime"></p>
-      <p id="totaltime"></p>
+    <center>
+      <div class="image-container">
+        <img src="https://localimg.zohostatic.com/catalyst/img/Catalyst-Logo-857518f26c.svg" alt="QA TOOL">
+        <div class="title">QA TOOL</div>
       </div>
-  <div class="rundatastore" id="rundatastore">
-    <form>
-    <label for="email">Enter the email address to which final report has to be sent (Provide @zohotest.com email id) :</label>
-    <input type="email" id="email">
-    <br><br>
-    <input type="button" id="runcase" class="button button1" onclick="executeCases()" value="Run Cases">
-  </form>
-    </div>
+      <div>
+        <table class="table1" id="table1">
+          <tr style="background-color: rgba(255, 255, 255, 0.333);">
+            <th>First Name</th>
+            <th>Report to Email</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Total Time</th>
+            <th>No of Failures</th>
+            <th>Passed Percentage</th>
+          </tr>
+          <tr>
+            <td id="fname"></td>
+            <td id="femail"></td>
+            <td id="starttime"></td>
+            <td id="endtime"></td>
+            <td id="totaltime"></td>
+            <td id="count"></td>
+            <td id="percentage"></td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <div class="rundatastore" id="rundatastore">
+        <form>
+          <div id="form">
+            <p id="name"></p>
+            <label for="email">Enter email to receive the report :</label>
+            <input type="email" id="email" value="@zohotest.com" class="email-input">
+            <br>
+            <input type="button" class="button button1" onclick="executeCases()" value="Run Cases">
+          </div>
+        </form>
+      </div>
+      <div id="cases_table">
+        <table class="table2">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>CASE DESCRIPTION</th>
+              <th>CASE RESULT</th>
+              <th>COMPONENT</th>
+            </tr>
+          </thead>
+          <tbody id="data_table">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </center>
+  </font>
+</body>
 
-  <div class="cases_table" id="cases_table">
-  <table style="width:80%" class="data_table" id="data_table" >
-  <tr>
-    <th>S.No</th>
-    <th>Case description</th>
-    <th>Case result</th>
-    <th>Component</th>
-  </tr>
-  </table>
-  </div>
-  <div class="count" id="count">
-  </div>
-  <div id="percentage">
-  </div>
-</center>
-</font>
-  </body>
-  </html>
+</html>
