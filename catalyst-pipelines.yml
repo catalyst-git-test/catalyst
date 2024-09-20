@@ -14,6 +14,7 @@ jobs:
       - curl -fsSL https://rpm.nodesource.com/setup_18.x | bash -
       - microdnf install -y nodejs
       - npm install -g zcatalyst-cli
+      - printenv
       - catalyst deploy --verbose
 stages:
   - name: deploy
