@@ -5,7 +5,7 @@ runners:
 jobs:
   catalyst-deploy:
     steps:
-      - npm install -g zcatalyst-cli@beta
+      - npm install -g zcatalyst-cli
       - catalyst deploy
 stages:
   - name: deploy
