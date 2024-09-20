@@ -2,6 +2,12 @@ version: 1.0
 runners:
   high:
     config-id: 3
+images:
+    jdk:
+        image: maven:3.8.5-openjdk-17
+        auth:
+            username: vipinkumarh
+            password: << env.DOCKER_PASS >> 
 jobs:
   catalyst-deploy:
     steps:
@@ -11,5 +17,6 @@ jobs:
 stages:
   - name: deploy
     runner: high
+    image: jdk
     jobs:
       - catalyst-deploy
