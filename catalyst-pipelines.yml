@@ -7,7 +7,7 @@ jobs:
     steps:
       - npm install -g zcatalyst-cli@beta
       - printenv
-      - catalyst deploy
+      - catalyst deploy --verbose
 stages:
   - name: deploy
     runner: high
