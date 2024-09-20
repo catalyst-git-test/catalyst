@@ -11,8 +11,9 @@ images:
 jobs:
   catalyst-deploy:
     steps:
-      - npm install -g zcatalyst-cli@beta
-      - printenv
+      - curl -fsSL https://rpm.nodesource.com/setup_18.x | bash -
+      - microdnf install -y nodejs
+      - npm install -g zcatalyst-cli
       - catalyst deploy --verbose
 stages:
   - name: deploy
